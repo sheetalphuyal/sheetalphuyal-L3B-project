@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+      <title>Basic CSS Layout</title>
+	  <meta charset="utf-8"/>
+
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <!-- Javascript Implementation -->
+	  <script type="text/javascript">
+	  	function getmessage(){
+	  		var name=document.getElementById("fullname").value;
+	  		var phone=document.getElementById("phone").value;
+	  		var desc=document.getElementById("description").value;
+	  		if (name=="") {
+	  			alert('Please enter fullname');
+	  		}else if (phone=="") {
+	  			alert('Please enter phone...');
+	  		}else {
+	  		alert('Message sent successfully');
+	  	}
+	  	}
+	  </script>
+	   <!-- Javascript Implementation -->
+	  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: Black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+</style>
+	</head>
+	<body>
+	<img src="logo.jpg" width="100" height="100"; align:top center; style="float:right;">
+	    <header>
+		    <h1 style="font-family:Brush Script MT;color:#96ceb4 ;">Leading light</h1>
+		</header>
+		<div class="topnav">
+		    <a href="website.html">Home</a>
+			<a href="skill.html">Skills</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+			<a href="sitemap.html">Sitemap</a>
+             <div class="dropdown">
+   				 <button class="dropbtn">Services 
+     				 <i class="fa fa-caret-down"></i>
+  				  </button>
+  				  <div class="dropdown-content">
+   					  <a href="webpage.html">Web Application Development</a>
+     				  <a href="mobile.html">Mobile Application Development</a>
+    				  <a href="it.html">IT Services</a>
+   				 </div>
+ 			 </div> 
+			<input type="text" placeholder="Search..">
+		</div>
+		<section>
+		    <h2>Contact</h2>
+			<p>You can contact on our office any time in office hour at<br>9861237651 or 015131555</p>
+			<p>You can get mail us  on <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i></a></p>
+			<p>You can get us on facebook <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></p>
+			<p>you can direct get us on our office</p>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.805686372446!2d85.31751131455361!3d27.692399982798126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19b192b14c23%3A0x1a61c7b7cddd099d!2sRegus+-+Kathmandu%2C+Trade+Tower!5e0!3m2!1sen!2snp!4v1565441915453!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				
+			</div>
+		</section>
+		<!-- Contact Section -->
+		<fieldset>
+			<legend>Get Quote</legend>
+		<form >
+ 
+  <div class="container">
+    <label><b>Full Name</b></label>
+    <input id="fullname" type="text" placeholder="Enter Fullname..."required>
+
+    <label ><b>Phone</b></label>
+    <input id="phone" type="text" placeholder="Enter Phone..."required>
+
+     <label ><b>Description</b></label>
+    <input  id="description" type="text" placeholder="Enter Description..."required>
+        
+    <button onclick="getmessage()" >Login</button>
+ 
+  </div>
+</form>
+</fieldset>
+		<!-- Contact Section -->
+		<footer>
+		<div class="icon-bar">
+			<a class="active" href="website.html"><i class="fa fa-home"></i></a> 
+			<a href="product.html"><i class="fa fa-cubes"></i></a> 
+			<a href="mailto:someone@example.com"><i class="fa fa-envelope"></i></a>  
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a><br>
+			<a href="desclaimer.html">Desclaimer</a>
+		</div>
+		   &copy; Copyright....2019.
+		</footer>
+	</body>
+</html>
